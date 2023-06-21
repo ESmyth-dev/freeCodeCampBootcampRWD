@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lifestyle Form</title>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <h1 id="title">Lifestyle Form</h1>
+    <p id="description">This form will ask a few questions about your lifestyle choices to get a general idea of how healthy your lifestyle is.</p>
+    <form id="survey-form" action="google.com">
+      <section><label id="name-label" for="name"> Name: <input id="name" type="text" placeholder="Enter your name here" required/></label></section>
+      <section><label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email here" required/></label></section>
+      <section><label id="number-label" for="number">Age: <input id="number" type="number" placeholder="Enter your age here" min="1" max="120"/></label></section>
+      <section><label for="dropdown" id="dropdown-label">How many times a week do you exercise? <select id="dropdown">
+        <option value="5+">5+</option>
+        <option value="3-4">3-4</option>
+        <option value="1-2">1-2</option>
+        <option value="0" selected>0</option>
+      </select></label></section>
+      <section><fieldset id="smoking">
+        <legend>Do you smoke?</legend>
+        <div><label class="radio-label"for="smoker" id="smoker-label"><input id="smoker" type="radio" name="smoking" value="smoker"/> Smoker</label></div>
+        <div><label class="radio-label label"for="non-smoker" id="non-smoker-label"><input type="radio" name="smoking" value="non-smoker"/> Non-smoker</label></div>
+      </fieldset></section>
+      <section><fieldset>
+        <legend>Select all which apply:</legend>
+        <div><label for="sleep" id="sleep-label"><input id="sleep" type="checkbox" value="sleep"> I usually get atleast 7-8 hours of sleep per night</label></div>
+        <div><label for="diet" id="diet-label"><input id="diet" type="checkbox" value="diet"> On most days I tend to eat a range of fruits and vegetables</label></div>
+        <div><label for="stress" id="stress-label"><input id="stress" type="checkbox" value="stress"> I usually do not feel overly stessed or anxious</label></div>
+      </fieldset></section>
+      <section><label for="comments" id="comments-label"> Any additional comments relevant to health: <textarea placeholder></textarea></label></section>
+      <section><input id="submit" type="submit"/></section>
+    </form>
+  </body>
+</html>

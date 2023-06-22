@@ -1,0 +1,22 @@
+#image{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+figcaption{
+  text-align: center;
+}
+body{
+  font-family: Verdana;
+  background-color: #06283D;
+  color: #DFF6FF;
+}
+a{
+  color: #1363DF;
+  text-decoration: none;
+}
+a:hover{
+  color: #06283D;
+  background-color: #1363DF;
+}
